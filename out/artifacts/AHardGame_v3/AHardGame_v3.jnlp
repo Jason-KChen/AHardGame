@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AHardGame_v3.jnlp">
+  <information>
+    <title>AHardGame_v3.0</title>
+    <vendor>Unknown</vendor>
+    <description>AHardGame_v3</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="AHardGame_v3.jar" size="74355" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="600" main-class="AHardGame_v3.Main"  name="AHardGame_v3" />
+  <update check="background"/>
+</jnlp>

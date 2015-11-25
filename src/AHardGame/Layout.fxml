@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AHardGame.Controller">
+   <children>
+      <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="-45.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning: This is a hard game!!!" textAlignment="CENTER" underline="true" wrappingWidth="274.0528564453125" />
+      <Line endX="100.0" layoutX="301.0" layoutY="291.0" rotate="90.0" startX="-100.0" />
+      <TextField fx:id="NameField" layoutX="44.0" layoutY="139.0" />
+      <Button fx:id="NameButton" layoutX="218.0" layoutY="139.0" mnemonicParsing="false" onAction="#nameSubmission" text="Submit Name" />
+      <Text fx:id="NameText" fontSmoothingType="LCD" layoutX="14.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Name Here" textAlignment="CENTER" wrappingWidth="248.80487060546875">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="219.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ScoreBoard" wrappingWidth="162.80487060546875">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Button layoutX="271.0" layoutY="406.0" mnemonicParsing="false" onAction="#userChoiceSubmission" text="Submit" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="332.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.jpeg" />
+         </image>
+      </ImageView>
+      <Text fx:id="GivenName" layoutX="138.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1 " underline="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="331.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A &quot;Smart&quot; Computer" underline="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Line endX="500.0" layoutX="101.0" layoutY="442.0" startX="-100.0" />
+      <RadioButton fx:id="Rock" layoutX="207.0" layoutY="217.0" mnemonicParsing="false" textFill="WHITE" />
+      <RadioButton fx:id="Paper" layoutX="206.0" layoutY="300.0" mnemonicParsing="false" textFill="WHITE" />
+      <RadioButton fx:id="Scissor" layoutX="206.0" layoutY="374.0" mnemonicParsing="false" textFill="WHITE" />
+      <ImageView fitHeight="70.0" fitWidth="150.0" layoutX="68.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@rock.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="150.0" layoutX="66.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@paper.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="150.0" layoutX="66.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@scissors.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="PlayerScore" layoutX="148.0" layoutY="520.0" text="0">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Label>
+      <Label fx:id="ComputerScore" layoutX="406.0" layoutY="520.0" text="0">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="43.0" text="A Hard Game" textAlignment="CENTER">
+         <font>
+            <Font name="AppleGothic Regular" size="30.0" />
+         </font>
+      </Label>
+      <Text fx:id="ReadyText" layoutX="172.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You Are All Set!!!" textAlignment="CENTER" visible="false" wrappingWidth="255.80487060546875">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
